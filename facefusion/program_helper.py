@@ -1,7 +1,6 @@
 from argparse import ArgumentParser, _ArgumentGroup, _SubParsersAction
 from typing import Optional
 
-
 def find_argument_group(program : ArgumentParser, group_name : str) -> Optional[_ArgumentGroup]:
 	for group in program._action_groups:
 		if group.title == group_name:
